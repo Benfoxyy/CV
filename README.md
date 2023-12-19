@@ -1,2 +1,2 @@
 # CV
-protofilo
+protofolio with django
