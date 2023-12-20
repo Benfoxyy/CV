@@ -13,6 +13,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('cv_app.urls')),
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps},
-        name='django.contrib.sitemaps.views.sitemap')
+        name='django.contrib.sitemaps.views.sitemap'),
+    path('robots.txt', include('robots.urls')),
 ]
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

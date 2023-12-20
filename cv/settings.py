@@ -39,10 +39,14 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'django.contrib.sitemaps',
+    'robots',
     'cv_app',
 ]
 
 SITE_ID = 3
+
+ROBOTS_USE_SITEMAP = False
+ROBOTS_USE_HOST = False
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
